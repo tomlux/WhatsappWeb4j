@@ -25,7 +25,7 @@ import java.util.List;
  * @param participants                   a non null list of all the participants of the group
  */
 public final record GroupMetadataResponse(@JsonProperty("id") @NonNull String jid,
-                                          @JsonProperty("owner") @NonNull String founderJid,
+                                          @JsonProperty("owner")  String founderJid,
                                           @JsonProperty("creation") int foundationTimestamp, @NonNull String subject,
                                           @JsonProperty("subjectTime") Integer lastSubjectUpdateTimestamp,
                                           @JsonProperty("subjectOwner") String lastSubjectUpdateJid,
